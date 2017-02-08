@@ -3,7 +3,7 @@ public class Car {
 	int gear = 1;
 	int location ;
 	int speed = 0;
-	final int destination = 250; 
+	final int DESTINATION = 250; 
 	
 	void reverseGear() {
 			gear = -1;
@@ -44,7 +44,7 @@ void gearDown(){
 	}
 }
 	int reportRemaining (){
-		return location - destination ; 
+		return DESTINATION - location ; 
 		}
 
 void moveByTime(int time){	
@@ -60,7 +60,7 @@ void moveByTime(int time){
 }
 }
 	boolean isArrived(){
-		if (location>= destination){
+		if (location>= DESTINATION){
 			return true;	
 	}
 	else
